@@ -22,6 +22,7 @@ let util = require('./modules/util')
 let app = express();
 
 app.use(session({
+
     secret: config.session.secret,
     saveUninitialized: true,
     resave: false
